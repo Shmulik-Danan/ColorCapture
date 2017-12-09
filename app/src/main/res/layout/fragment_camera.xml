@@ -1,0 +1,40 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".CameraFragment"
+   >
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <org.opencv.android.JavaCameraView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/opencv_tutorial_activity_surface_view"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="#B0171F"
+        android:id="@+id/touch_coordinates" />
+
+
+
+    <com.example.elixi.c.Square
+        android:id="@+id/Square"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+
+        android:src="@drawable/ic_panorama_fish_eye" />
+
+</FrameLayout>
